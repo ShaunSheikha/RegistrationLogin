@@ -1,0 +1,34 @@
+﻿@model RegistrationLogin.Models.User
+@{
+    ViewData["Title"] = "Register";
+}
+
+<div class="container justify-content-center registrationForm">
+
+    <form asp-action="RegisterNewUser">
+
+        <div class="form-group col-md">
+            <label asp-for="firstName">First Name</label>
+            <input asp-for="firstName" type="text" class="form-control" id="firstName" placeholder="First Name" />
+        </div>
+        <div class="form-group col-md">
+            <label asp-for="lastName">Last Name</label>
+            <input asp-for="lastName" type="text" class="form-control" id="lastName" placeholder="Last Name" />
+        </div>
+        <div class="form-group col-md">
+            <label asp-for="email">Email</label>
+            <input asp-for="email" type="email" class="form-control" id="emailAddress" placeholder="Email" />
+        </div>
+
+        <div class="form-group col-md">
+            <label asp-for="age">Age</label>
+            <input asp-for="age" type="number" class="form-control" id="number" placeholder="Age" />
+        </div>
+
+        <button type="submit" class="btn btn-primary">Register</button>
+        <input name="__RequestVerificationToken" type="hidden" value="<token_generated_here>">
+    </form>
+
+</div>
+
+<a href="/">Back to Home</a>
