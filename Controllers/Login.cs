@@ -15,16 +15,16 @@ namespace RegistrationLogin.Controllers
             return View();
         }
 
-        public IActionResult LogMeIn(string email, string firstName)
+        public IActionResult LogMeIn(string email, string password)
         {
 
             string connString = "Server=(local);Database=RegistrationLoginMVC;Trusted_Connection=True;";
             using (SqlConnection connection = new SqlConnection(
                connString))
             {
-                SqlCommand sqlCommand = new SqlCommand("select * from [dbo].[User] where email = @email and firstName =@firstName;",connection);
+                SqlCommand sqlCommand = new SqlCommand($"select * from [dbo].[User] where email = @email and password = Hashbytes('SHA2_256', '{password}');", connection);
                 sqlCommand.Parameters.AddWithValue("@email", email);
-                sqlCommand.Parameters.AddWithValue("@firstName", firstName);
+                //sqlCommand.Parameters.AddWithValue("@password", password);
 
 
                 SqlDataAdapter sqlDataAdapter = new SqlDataAdapter(sqlCommand);
@@ -40,7 +40,7 @@ namespace RegistrationLogin.Controllers
 
                 if(dataTable.Rows.Count > 0)
                 {
-                    ViewData["firstName"] = firstName;
+                    ViewData["firstName"] = dataTable.Rows[0]["firstName"].ToString();
                     return View();
                 }
                 else

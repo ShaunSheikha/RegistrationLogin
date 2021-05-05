@@ -19,7 +19,7 @@ namespace RegistrationLogin.Controllers
 
         public IActionResult RegisterNewUser(User user)
         {
-            string sqlQuery = $"insert into [dbo].[User](firstName, lastName, email, age) values ('{user.firstName}','{user.lastName}','{user.email}',{user.age});";
+            string sqlQuery = $"insert into [dbo].[User](firstName, lastName, email, age, password) values ('{user.firstName}','{user.lastName}','{user.email}',{user.age}, Hashbytes('SHA2_256','{user.password}'));";
             string connString = "Server=(local);Database=RegistrationLoginMVC;Trusted_Connection=True;";
 
 
@@ -31,15 +31,7 @@ namespace RegistrationLogin.Controllers
                 command.ExecuteNonQuery();
             }
 
-            /*SqlConnection connection = new SqlConnection(connString);
-            SqlDataAdapter sqlDataAdapter = new SqlDataAdapter(sqlQuery, connection);
-            DataTable dataTable = new DataTable();
-            sqlDataAdapter.Fill(dataTable);
-            foreach(DataRow row in dataTable.Rows)
-            {
-                testString = row["firstName"].ToString();
-            }
-*/
+           
             return Redirect(Url.Content("~/"));
         }
     }
