@@ -1,0 +1,12 @@
+C:\Users\16019\Documents\RegistrationLogin\RegistrationLogin.Core\bin\Debug\net5.0\RegistrationLogin.Core.deps.json
+C:\Users\16019\Documents\RegistrationLogin\RegistrationLogin.Core\bin\Debug\net5.0\RegistrationLogin.Core.dll
+C:\Users\16019\Documents\RegistrationLogin\RegistrationLogin.Core\bin\Debug\net5.0\ref\RegistrationLogin.Core.dll
+C:\Users\16019\Documents\RegistrationLogin\RegistrationLogin.Core\bin\Debug\net5.0\RegistrationLogin.Core.pdb
+C:\Users\16019\Documents\RegistrationLogin\RegistrationLogin.Core\obj\Debug\net5.0\RegistrationLogin.Core.csprojAssemblyReference.cache
+C:\Users\16019\Documents\RegistrationLogin\RegistrationLogin.Core\obj\Debug\net5.0\RegistrationLogin.Core.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\16019\Documents\RegistrationLogin\RegistrationLogin.Core\obj\Debug\net5.0\RegistrationLogin.Core.AssemblyInfoInputs.cache
+C:\Users\16019\Documents\RegistrationLogin\RegistrationLogin.Core\obj\Debug\net5.0\RegistrationLogin.Core.AssemblyInfo.cs
+C:\Users\16019\Documents\RegistrationLogin\RegistrationLogin.Core\obj\Debug\net5.0\RegistrationLogin.Core.csproj.CoreCompileInputs.cache
+C:\Users\16019\Documents\RegistrationLogin\RegistrationLogin.Core\obj\Debug\net5.0\RegistrationLogin.Core.dll
+C:\Users\16019\Documents\RegistrationLogin\RegistrationLogin.Core\obj\Debug\net5.0\ref\RegistrationLogin.Core.dll
+C:\Users\16019\Documents\RegistrationLogin\RegistrationLogin.Core\obj\Debug\net5.0\RegistrationLogin.Core.pdb
